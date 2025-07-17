@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration and Login</title>
+    <style>
+        body {
+    background-color: #f0f0f0; /* Grey background color */
+    font-family: Arial, sans-serif; /* Example font family */
+}
+
+.form-container {
+    background-color: #ffffff; /* White background color for the form container */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Example box shadow */
+    width: 300px;
+    margin: 0 auto;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .form-container {
+            display: none;
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container.active {
+            display: block;
+        }
+        .form-container h2 {
+            text-align: center;
+        }
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-container label {
+            margin-bottom: 10px;
+        }
+        .form-container input[type="text"],
+        .form-container input[type="password"] {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container button {
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+        .login-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .login-button {
+            padding: 10px;
+            margin: 10px auto;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            max-width: 200px;
+        }
+        .login-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container" id="student-login">
+        <img src="student.png" alt="Student Image" style="display:block; margin: 0 auto;">
+        <h2>Student login</h2>
+        <form action="/student/login" method="post">
+            <label for="student-username">Username:</label>
+            <input type="text" id="student-username" name="username" required>
+            <label for="student-password">Password:</label>
+            <input type="password" id="student-password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div class="form-container" id="pg-owner-login">
+        <img src="pg_owner_image.jpg" alt="PG Owner Image" style="display:block; margin: 0 auto;">
+        <h2>PG Owner login</h2>
+        <form action="/pg_owner/login" method="post">
+            <label for="pg-owner-username">Username:</label>
+            <input type="text" id="pg-owner-username" name="username" required>
+            <label for="pg-owner-password">Password:</label>
+            <input type="password" id="pg-owner-password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div class="form-container" id="mess-owner-login">
+        <img src="mess_owner_image.jpg" alt="Mess Owner Image" style="display:block; margin: 0 auto;">
+        <h2>Mess Owner login</h2>
+        <form action="/mess_owner/login" method="post">
+            <label for="mess-owner-username">Username:</label>
+            <input type="text" id="mess-owner-username" name="username" required>
+            <label for="mess-owner-password">Password:</label>
+            <input type="password" id="mess-owner-password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div class="login-buttons">
+        <button class="login-button" onclick="showLoginForm('student-login')">Student Login</button>
+        <button class="login-button" onclick="showLoginForm('pg-owner-login')">PG Owner Login</button>
+        <button class="login-button" onclick="showLoginForm('mess-owner-login')">Mess Owner Login</button>
+    </div>
+
+    <script>
+        function showLoginForm(formId) {
+            var forms = document.querySelectorAll('.form-container');
+            forms.forEach(function(form) {
+                form.classList.remove('active');
+            });
+            var selectedForm = document.getElementById(formId);
+            selectedForm.classList.add('active');
+        }
+
+        // Initially, show the register form
+        showLoginForm('registerForm');
+    </script>
+</body>
+</html>

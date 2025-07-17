@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayStayEat</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="header-title">
+                PayStayEat 
+                <img src="WhatsApp Image 2024-04-10 at 2.23.08 PM.jpeg" alt="PayStayEat Logo">
+            </h1>
+            
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="room.html">Rooms</a></li>
+                    <li><a href="mess.html">Mess</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    
+                    <li><a href="#faqs">FAQs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Registration/Login Button -->
+        <a href="registration.html" class="register-button">Register</a>
+    </header>
+    
+    
+    
+    <section id="home" class="hero">
+        <div class="slider-container">
+            <div class="slide fade">
+                <img src="image1.png" alt="Comfortable Room">
+                <div class="text">Welcome to Your Comfort Zone!</div>
+            </div>
+            <div class="slide fade">
+                <img src="image3.png" alt="Homelike Dining">
+                <div class="text">Home away from your Home!</div>
+            </div>
+            <div class="slide fade">
+                <img src="image5.png" alt="Delicious Meals">
+                <div class="text">Delicious Meals Served Daily!</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        
+        
+        
+        <script src="script.js"></script>
+    </section>
+    
+    
+    
+
+    <section id="about" class="content-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Story</h3>
+                    <p>Founded in 2024, our PG and Mess service has grown from a modest beginning into a premier facility in the heart of the city. We pride ourselves on providing comfortable living and gourmet dining experiences tailored to students and working professionals.</p>
+                    
+                    <h3>Our Mission</h3>
+                    <p>Our mission is to create a home away from home where residents can live, study, and relax in comfort. We aim to provide an environment that supports our residents' educational journeys and professional growth with state-of-the-art amenities and a supportive community.</p>
+                    
+                     
+                </div>
+                 
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="rooms" class="content-section bg-light">
+        <div class="container">
+            <h2>Our Rooms</h2>
+            <div class="room-grid">
+                <article class="room">
+                    <img src="single.png" width="150" alt="Single Room">
+                    <h3>Single Room</h3>
+                    <p>A private retreat perfect for students and professionals who prefer solitude or need a quiet working environment.</p>
+                    <ul class="amenities-list">
+                        <li>Size: 15m²</li>
+                        <li>Private Bathroom</li>
+                        <li>Study Desk & Chair</li>
+                        <li>High-Speed Wi-Fi</li>
+                        <li>Room Service</li>
+                        <li>Pricing - 4500-7000</li>
+                    </ul>
+                    <button class="btn">Check Availability</button>
+                </article>
+                <article class="room">
+                    <img src="doubble.png" width="150" alt="Double Room">
+                    <h3>Double Room</h3>
+                    <p>Designed for sharing, this room is ideal for friends or colleagues, offering comfort and convenience with twin beds.</p>
+                    <ul class="amenities-list">
+                        <li>Size: 20m²</li>
+                        <li>Two Single Beds</li>
+                        <li>Shared Bathroom</li>
+                        <li>Two Study Desks</li>
+                        <li>High-Speed Wi-Fi</li>
+                        <li>Pricing - 3500-5000</li>
+                    </ul>
+                    <button class="btn">Check Availability</button>
+                </article>
+                <article class="room">
+                    <img src="tripl.png" width="150" alt="Triple Room">
+                    <h3>Triple Room</h3>
+                    <p>Our most economical option, great for groups or students looking to economize while enjoying all amenities.</p>
+                    <ul class="amenities-list">
+                        <li>Size: 25m²</li>
+                        <li>Three Single Beds</li>
+                        <li>Larger Shared Bathroom</li>
+                        <li>Multiple Storage Options</li>
+                        <li>High-Speed Wi-Fi</li>
+                        <li>Pricing - 2500-3500</li>
+                    </ul>
+                    <button class="btn">Check Availability</button>
+                </article>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="mess" class="content-section">
+        <div class="container">
+            <h2>Our Mess</h2>
+            <p>We provide varied and nutritious meals crafted by experienced chefs. Our mess hall can accommodate a large number of residents, ensuring a communal and friendly dining experience.</p>
+             
+            <h3>1.Shital Mess</h3>
+             
+            
+            <p>Our menus rotate weekly to provide variety. Here's an example of what a week might look like:</p>
+            
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+                <style>
+                    
+                    body {
+                        font-family: Arial, sans-serif;
+                        margin: 0;
+                        padding: 20px;
+                        background-color: #f4f4f4;
+                        color: #333;
+                    }
+                    table {
+                        width: 100%;
+                        border-collapse: collapse;
+                        margin: 25px 0;
+                        box-shadow: 0 4px 8px rgba(0,0,0,0.1);  
+                    }
+                    th, td {
+                        padding: 12px;
+                        text-align: left;
+                        border-bottom: 1px solid #dddddd;  
+                    }
+                    th {
+                        background-color: #007BFF;  
+                        color: white;
+                        font-size: 18px;
+                    }
+                    td {
+                        font-size: 16px;
+                        background-color: #ffffff;
+                    }
+                     
+                    tr:hover {
+                        background-color: #f1f1f1;
+                    }
+                    
+                    @media screen and (max-width: 600px) {
+                        table {
+                            display: block;
+                            overflow-x: auto;
+                        }
+                    }
+                </style>
+            </head>
+            <body>
+
+
+                <h4>Weekly Mess Menu</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Menu</th>
+                            <th>Price (₹)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Paneer Curry, Rice, Chapati, Dal, Salad</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>Chicken Curry, Rice, Chapati, Dal, Salad</td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>Veg-Maratha, Rice, Chapati, Dal, Salad</td>
+                            <td>70</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>Bhendi Fry, Rice, Chapati, Dal, Salad</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>Egg Curry, Rice, Chapati, Dal, Salad</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>Chhole, Rice, Chapati, Dal, Salad</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>Pavbhaji/Misal/Biryani</td>
+                            <td>60</td>
+                        </tr>
+                    </tbody>
+                </table>
+            <img src="dish.png" width="400" height="300" alt="">
+            
+            
+    
+            <h4>Pure Vegetarian Options</h4>
+            <p>Our kitchen also provides a separate vegetarian menu, ensuring no cross-contamination.</p>
+            <table class="menu-table">
+                <thead>
+                    <tr>
+                        <th>Meal</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Paneer Tikka, Rice, Chapati, Dal, Salad</td>
+                        <td>100</td>
+                    </tr>
+                </tbody>
+            </table>
+    
+            <h4>Owner's Detail</h4>
+            <p>The mess is managed by  Anna and Aunty, a veteran in the hospitality industry with over 20 years of experience. His commitment to quality and service excellence ensures that our mess remains a highlight of our PG services.</p>
+            
+    
+            <h4>Location & Contact</h4>
+            <p>Located within the main DIT College,Pimpri, our mess hall is easily accessible for all students.</p>
+            <p> <strong>+91 87930 63730</strong></p>
+
+
+            <h3>2.Pardesi Mess</h3>
+             
+    
+           
+            
+            <p>Our menus rotate weekly to provide variety. Here's an example of what a week might look like:</p>
+            
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+                <style>
+                     
+                    body {
+                        font-family: Arial, sans-serif;
+                        margin: 0;
+                        padding: 20px;
+                        background-color: #f4f4f4;
+                        color: #333;
+                    }
+                    table {
+                        width: 100%;
+                        border-collapse: collapse;
+                        margin: 25px 0;
+                        box-shadow: 0 4px 8px rgba(0,0,0,0.1);  
+                    }
+                    th, td {
+                        padding: 12px;
+                        text-align: left;
+                        border-bottom: 1px solid #dddddd; 
+                    }
+                    th {
+                        background-color: #007BFF;  
+                        color: white;
+                        font-size: 18px;
+                    }
+                    td {
+                        font-size: 16px;
+                        background-color: #ffffff;
+                    }
+                     
+                    tr:hover {
+                        background-color: #f1f1f1;
+                    }
+                    
+                    @media screen and (max-width: 600px) {
+                        table {
+                            display: block;
+                            overflow-x: auto;
+                        }
+                    }
+                </style>
+            </head>
+            <body>
+
+
+                <h4>Weekly Mess Menu</h4>
+                <img src="dish2.png" width="400" height="300" alt="">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Menu</th>
+                            <th>Price (₹)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Paneer Curry, Rice, Chapati, Dal, Salad</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>Chicken Curry, Rice, Chapati, Dal, Salad</td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>Veg-Maratha, Rice, Chapati, Dal, Salad</td>
+                            <td>70</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>Bhendi Fry, Rice, Chapati, Dal, Salad</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>Egg Curry, Rice, Chapati, Dal, Salad</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>Chhole, Rice, Chapati, Dal, Salad</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>Pavbhaji/Misal/Biryani</td>
+                            <td>60</td>
+                        </tr>
+                    </tbody>
+                </table>
+            
+            
+            
+    
+            
+    
+            <h4>Owner's Detail</h4>
+            <p>The mess is managed by Anil Shinde, a veteran in the hospitality industry with over 20 years of experience. His commitment to quality and service excellence ensures that our mess remains a highlight of our PG services.</p>
+            
+    
+            <h4>Location & Contact</h4>
+            <p>Located within the main DIT College,Pimpri, our mess hall is easily accessible for all students.</p>
+            <p> <strong>+91 98344 34222</strong></p>
+
+
+            <h3>3.Mahadev Mess</h3>
+             
+            
+            <p>Our menus rotate weekly to provide variety. Here's an example of what a week might look like:</p>
+            
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+                <style>
+                   
+                    body {
+                        font-family: Arial, sans-serif;
+                        margin: 0;
+                        padding: 20px;
+                        background-color: #f4f4f4;
+                        color: #333;
+                    }
+                    table {
+                        width: 100%;
+                        border-collapse: collapse;
+                        margin: 25px 0;
+                        box-shadow: 0 4px 8px rgba(0,0,0,0.1);  
+                    }
+                    th, td {
+                        padding: 12px;
+                        text-align: left;
+                        border-bottom: 1px solid #dddddd;  
+                    }
+                    th {
+                        background-color: #007BFF;  
+                        color: white;
+                        font-size: 18px;
+                    }
+                    td {
+                        font-size: 16px;
+                        background-color: #ffffff;
+                    }
+                     
+                    tr:hover {
+                        background-color: #f1f1f1;
+                    }
+                     
+                    @media screen and (max-width: 600px) {
+                        table {
+                            display: block;
+                            overflow-x: auto;
+                        }
+                    }
+                </style>
+            </head>
+            <body>
+
+
+                <h4>Weekly Mess Menu</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Menu</th>
+                            <th>Price (₹)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Paneer Curry, Rice, Chapati, Dal, Salad</td>
+                            <td>80</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>Chicken Curry, Rice, Chapati, Dal, Salad</td>
+                            <td>120</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>Veg-Maratha, Rice, Chapati, Dal, Salad</td>
+                            <td>70</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>Bhendi Fry, Rice, Chapati, Dal, Salad</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>Egg Curry, Rice, Chapati, Dal, Salad</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>Chhole, Rice, Chapati, Dal, Salad</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>Pavbhaji/Misal/Biryani</td>
+                            <td>60</td>
+                        </tr>
+                    </tbody>
+                </table>
+            <img src="dish3.png" width="400" height="300" alt="">
+            
+            
+    
+             
+    
+            <h4>Owner's Detail</h4>
+            <p>The mess is managed by  Chiraj Deshmukh, a veteran in the hospitality industry with over 20 years of experience. His commitment to quality and service excellence ensures that our mess remains a highlight of our PG services.</p>
+            
+    
+            <h4>Location & Contact</h4>
+            <p>Located within the main DIT College,Pimpri, our mess hall is easily accessible for all students.</p>
+            <p> <strong>+91 90992 23838</strong></p>
+
+        
+        </div>
+    </section>
+    
+
+    <section id="gallery" class="content-section bg-light">
+        <div class="container">
+            <h2>Gallery</h2>
+    
+            <h3>Mess Hall Gallery</h3>
+            <div class="photo-gallery mess-gallery">
+                <div class="photo-item">
+                    <img src="mess.png" alt="Mess Hall View">
+                    <div class="photo-info">
+                         
+                    </div>
+                </div>
+                
+            </div>
+    
+            <h3>PG Rooms Gallery</h3>
+            <div class="photo-gallery pg-gallery">
+                <div class="photo-item">
+                    <img src="pg1.png" alt="Deluxe Room">
+                    <img src="pg2.png" alt="Deluxe Room">
+                    <img src="pg3.png" alt="Deluxe Room">
+                    <img src="pg4.png" alt="Deluxe Room">
+                    <img src="pg5.png" alt="Deluxe Room">
+                    <img src="pg6.png" alt="Deluxe Room">
+                
+                </div>
+                 
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="pricing" class="content-section">
+        <div class="container">
+            <h2>Pricing Details</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card" onmouseover="highlight(this)" onmouseout="unhighlight(this)">
+                    <h3>Single Room</h3>
+                    <p>Location: Main Building</p>
+                    <p>Price: 4500/month</p>
+                    <p>Amenities: Wi-Fi, Cable, Laundry</p>
+                </div>
+                <div class="pricing-card" onmouseover="highlight(this)" onmouseout="unhighlight(this)">
+                    <h3>Double Room</h3>
+                    <p>Location: North Wing</p>
+                    <p>Price: 3500/month</p>
+                    <p>Amenities: Wi-Fi, Cable, Laundry, Kitchenette</p>
+                </div>
+                <div class="pricing-card" onmouseover="highlight(this)" onmouseout="unhighlight(this)">
+                    <h3>Triple Room</h3>
+                    <p>Location: South Wing</p>
+                    <p>Price: 3000/month</p>
+                    <p>Amenities: Wi-Fi, Cable, Laundry, Shared Living Room</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+  
+    
+
+    <section id="faqs" class="content-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item" onclick="toggleFaq('faq1')">
+                <h4>What are the types of rooms available and their prices?</h4>
+                <p id="faq1" class="faq-answer">We offer Single, Double, and Triple rooms ranging from Rs.3000,4000,4500 respectively per month, inclusive of all amenities.</p>
+            </div>
+            <div class="faq-item" onclick="toggleFaq('faq2')">
+                <h4>What are the mess timings and are there any meal options?</h4>
+                <p id="faq2" class="faq-answer">Our mess is open from 7 AM to 9 PM. We offer vegetarian, vegan, and non-vegetarian meal options, with meals served three times a day.</p>
+            </div>
+            <div class="faq-item" onclick="toggleFaq('faq3')">
+                <h4>How can I book a room and what is the payment policy?</h4>
+                <p id="faq3" class="faq-answer">You can book a room through our website or by contacting us directly. We require a one-month deposit and the first month’s rent upfront.</p>
+            </div>
+            <div class="faq-item" onclick="toggleFaq('faq4')">
+                <h4>Do you have policies for late payments or cancellations?</h4>
+                <p id="faq4" class="faq-answer">Yes, late payments may incur a fee, and cancellations must be made 30 days in advance for a full deposit refund.</p>
+            </div>
+            <div class="faq-item" onclick="toggleFaq('faq5')">
+                <h4>What amenities are included with the accommodations?</h4>
+                <p id="faq5" class="faq-answer">All rooms come with Wi-Fi, laundry services, room cleaning, and access to the mess hall.</p>
+            </div>
+            <div class="faq-item" onclick="toggleFaq('faq6')">
+                <h4>Is there security on the premises?</h4>
+                <p id="faq6" class="faq-answer">Yes, we ensure full-time security with surveillance cameras and security personnel on duty 24/7.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact" class="content-section bg-light">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>For any inquiries, bookings, or feedback, please use the form below or reach out directly via phone or email.</p>
+            <div class="contact-info">
+                <p><strong>Phone:</strong> +91 86009 93202</p>
+                <p><strong>Email:</strong> paystayeat001@gmail.com</p>
+            </div>
+            <form id="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Your PG and Mess Service. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
